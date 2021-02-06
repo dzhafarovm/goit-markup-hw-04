@@ -266,8 +266,8 @@ img {
 }
 
 .team-cont {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team .title {
@@ -330,6 +330,16 @@ img {
 }
 
 /* Кнопки */
+.radio-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.radio-btn .item + .item {
+  margin-left: 8px;
+}
+
 .btn {
   padding: 6px 22px;
   border-radius: 4px;
@@ -346,16 +356,6 @@ img {
 .btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
-}
-
-.radio-btn {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
-}
-
-.radio-btn .item + .item {
-  margin-left: 8px;
 }
 
 /* карточки */
