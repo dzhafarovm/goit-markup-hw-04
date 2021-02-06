@@ -162,6 +162,7 @@ img {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-section .link {
@@ -251,14 +252,15 @@ img {
 
 .team {
   display: flex;
+  justify-content: space-between;
 }
 
 .team .item {
+  width: 270px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--box-team-shadow);
   background: var(--white-color);
   overflow: hidden;
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team .item + .item {
@@ -342,6 +344,7 @@ img {
 
 .btn {
   padding: 6px 22px;
+  border: none;
   border-radius: 4px;
 
   color: var(--primary-text-color);
@@ -367,18 +370,16 @@ img {
 }
 
 .card-set > .item {
+  width: 370px;
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
 
-.card {
-  border: 1px solid var(--portfolio-card);
-  overflow: hidden;
-  border-radius: 20px;
-}
-
 .card-cont {
+  border-right: 1px solid var(--portfolio-card);
+  border-left: 1px solid var(--portfolio-card);
+  border-bottom: 1px solid var(--portfolio-card);
   padding: 20px 24px;
 }
 
