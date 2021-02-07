@@ -85,10 +85,6 @@ img {
   line-height: 1.19;
 }
 
-.logo.foot {
-  color: var(--white-color);
-}
-
 .half-logo {
   color: var(--accent-color);
 }
@@ -153,6 +149,11 @@ img {
   text-align: center;
 }
 
+.hero-cont {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-section .title {
   margin-top: 0;
   margin-bottom: 35px;
@@ -178,15 +179,22 @@ img {
   letter-spacing: 0.06em;
 }
 
-.hero-cont {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 /* Наши возможности */
 .can-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.can {
+  display: flex;
+}
+
+.can .item {
+  width: 270px;
+}
+
+.can .item + .item {
+  margin-left: 30px;
 }
 
 .can-section .title {
@@ -205,21 +213,18 @@ img {
   line-height: 1.71;
 }
 
-.can {
-  display: flex;
-}
-
-.can .item {
-  width: 270px;
-}
-
-.can .item + .item {
-  margin-left: 30px;
-}
-
 /* Чем мы занимаемся */
 .work-section {
   padding-bottom: 94px;
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work .item + .item {
+  margin-left: 30px;
 }
 
 .work-section .title,
@@ -233,15 +238,6 @@ img {
   text-align: center;
 }
 
-.work {
-  display: flex;
-  justify-content: space-between;
-}
-
-.work .item + .item {
-  margin-left: 30px;
-}
-
 /* Наша команда */
 .team-section {
   padding-top: 94px;
@@ -252,15 +248,13 @@ img {
 
 .team {
   display: flex;
-  justify-content: space-between;
 }
 
 .team .item {
-  width: 270px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: var(--box-team-shadow);
-  background: var(--white-color);
   overflow: hidden;
+  box-shadow: var(--box-team-shadow);
+  background-color: var(--white-color);
 }
 
 .team .item + .item {
@@ -300,6 +294,13 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
+.logo.foot {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+}
+
 .address {
   color: var(--white-color);
   font-style: normal;
@@ -307,8 +308,8 @@ img {
   line-height: 1.71;
 }
 
-.address p {
-  margin-top: 20px;
+.address .paragraph {
+  margin-top: 0px;
   margin-bottom: 9px;
 }
 
@@ -370,17 +371,16 @@ img {
 }
 
 .card-set > .item {
-  width: 370px;
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
 
 .card-cont {
+  padding: 20px 24px;
   border-right: 1px solid var(--portfolio-card);
   border-left: 1px solid var(--portfolio-card);
   border-bottom: 1px solid var(--portfolio-card);
-  padding: 20px 24px;
 }
 
 .card-set .title {
