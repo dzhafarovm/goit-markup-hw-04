@@ -125,11 +125,30 @@ img {
 
 /* Ссылки на почту и телефон */
 .adr-nav {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
 }
 
 .adr-nav .item + .item {
   margin-left: 50px;
+}
+
+.icon-envelope::before {
+  display: inline-block;
+  content: '';
+  margin-right: 10px;
+  background-image: url(../images/envelope.svg);
+  width: 16px;
+  height: 12px;
+}
+
+.icon-smartphone::before {
+  display: inline-block;
+  content: '';
+  margin-right: 10px;
+  background-image: url(../images/smartphone.svg);
+  width: 10px;
+  height: 16px;
 }
 
 .adr-nav .link {
