@@ -12,6 +12,7 @@
   --box-team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-set-gap: 30px;
+  --hero-gradient: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -144,8 +145,16 @@ img {
 
 /* Герой */
 .hero-section {
-  /* height: 600px; */
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+    url(../images/hero.jpg);
   background-color: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
 }
 
@@ -195,6 +204,33 @@ img {
 
 .can .item + .item {
   margin-left: 30px;
+}
+
+.can .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--button-bg-color);
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .can-section .title {
