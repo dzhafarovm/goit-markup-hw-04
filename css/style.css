@@ -131,7 +131,7 @@ img {
 }
 
 .adr-nav .link {
-  display: inline-block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
