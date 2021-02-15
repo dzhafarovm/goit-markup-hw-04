@@ -103,15 +103,14 @@ img {
 .site-nav > .item + .item {
   margin-left: 50px;
 }
-
-/* .site-nav .item:not(:last-child) {
+/* АЛЬТЕРНАТИВА
+.site-nav .item:not(:last-child) {
   margin-right: 50px;
 } */
 
 .site-nav .link {
   /* padding-top: 32px;
   padding-bottom: 32px; */
-
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.15;
@@ -126,7 +125,6 @@ img {
   color: var(--accent-color);
 }
 
-/* Ссылки на почту и телефон */
 .adr-nav {
   display: flex;
   align-items: center;
@@ -139,9 +137,9 @@ img {
 
 .adr-nav .link {
   display: flex;
+  align-items: center;
   /* padding-top: 32px;
   padding-bottom: 32px; */
-  align-items: center;
 
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -168,27 +166,6 @@ img {
   fill: var(--accent-color);
 }
 
-/* .adr-nav .link::before {
-  display: block;
-  content: '';
-  width: 16px;
-  height: 16px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
-}
-
-.icon-envelope::before {
-  background-image: url(../images/envelope.svg);
-  background-size: 16px 12px;
-}
-
-.icon-smartphone::before {
-  background-image: url(../images/smartphone.svg);
-  background-size: 10px 16px;
-} */
-
 /* Герой */
 .hero-section {
   max-width: 1600px;
@@ -197,7 +174,7 @@ img {
   margin-right: auto;
   background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
     url(../images/hero.jpg);
-  /* background-color: var(--secondary-bg-color); */
+  background-color: var(--secondary-bg-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -266,34 +243,6 @@ img {
   width: 70px;
   height: 70px;
 }
-
-/* .can .item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--button-bg-color);
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/Sprite/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/Sprite/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/Sprite/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/Sprite/astronaut.svg);
-} */
 
 .can-section .title {
   margin-top: 0;
@@ -422,34 +371,6 @@ img {
   fill: var(--white-color);
 }
 
-/* 
-.item .icon {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--white-color);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.insta {
-  background-image: url(../images/instagram.svg);
-}
-
-.twitter {
-  background-image: url(../images/twitter.svg);
-}
-
-.facebook {
-  background-image: url(../images/facebook.svg);
-}
-
-.linkedin {
-  background-image: url(../images/linkedin.svg);
-} */
-
 /* Секция "Постоянные клиенты" */
 .clients-section {
   padding-top: 94px;
@@ -510,39 +431,6 @@ img {
   width: 88.48px;
   height: 45.44px;
 }
-
-/* .client .link {
-  display: inline-block;
-  width: 170px;
-  height: 90px;
-  background-color: var(--white-color);
-  background-size: contain;
-  background-position: center;
-}
-
-.comp-one {
-  background-image: url(../images/clients/Client1.svg);
-}
-
-.comp-two {
-  background-image: url(../images/clients/Client2.svg);
-}
-
-.comp-three {
-  background-image: url(../images/clients/Client3.svg);
-}
-
-.comp-four {
-  background-image: url(../images/clients/Client4.svg);
-}
-
-.comp-five {
-  background-image: url(../images/clients/Client5.svg);
-}
-
-.comp-six {
-  background-image: url(../images/clients/Client6.svg);
-} */
 
 /* Подвал */
 .footer {
@@ -613,42 +501,12 @@ img {
   background-color: var(--accent-color);
 }
 
-/* 
-
-.item .foot-icon {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--footlink-bg-color);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.foot-insta {
-  background-image: url(../images/foot-instagram.svg);
-}
-
-.foot-twitter {
-  background-image: url(../images/foot-twitter.svg);
-}
-
-.foot-facebook {
-  background-image: url(../images/foot-facebook.svg);
-}
-
-.foot-linkedin {
-  background-image: url(../images/foot-linkedin.svg);
-} */
-
 /* Страница "Портфолио" */
 .card-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* Кнопки */
 .radio-btn {
   display: flex;
   justify-content: center;
@@ -680,7 +538,6 @@ img {
   box-shadow: var(--btn-shadow);
 }
 
-/* карточки */
 .card-set {
   --card-set-gap: 30px;
   display: flex;
