@@ -109,8 +109,8 @@ img {
 } */
 
 .site-nav .link {
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.15;
@@ -138,8 +138,8 @@ img {
 .adr-nav .link {
   display: flex;
   align-items: center;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -352,7 +352,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-bottom: 30px;
 }
 
 .team-box {
