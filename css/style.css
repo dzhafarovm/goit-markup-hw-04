@@ -162,7 +162,9 @@ img {
 }
 
 .icon-envelope:hover,
-.icon-smartphone:hover {
+.icon-smartphone:hover,
+.icon-envelope:focus,
+.icon-smartphone:focus {
   fill: var(--accent-color);
 }
 
@@ -366,7 +368,8 @@ img {
   height: 20px;
 }
 
-.team-box:hover {
+.team-box:hover,
+.team-box:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
@@ -397,39 +400,10 @@ img {
   fill: var(--clients-networks-color);
 }
 
-.client-box:hover {
+.client-box:hover,
+.client-box:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
-}
-
-.client-icon1 {
-  width: 44.27px;
-  height: 49.23px;
-}
-
-.client-icon2 {
-  width: 40px;
-  height: 52px;
-}
-
-.client-icon3 {
-  width: 41px;
-  height: 42.8px;
-}
-
-.client-icon4 {
-  width: 79.66px;
-  height: 42.02px;
-}
-
-.client-icon5 {
-  width: 59px;
-  height: 47px;
-}
-
-.client-icon6 {
-  width: 88.48px;
-  height: 45.44px;
 }
 
 /* Подвал */
@@ -497,7 +471,8 @@ img {
   fill: var(--white-color);
 }
 
-.connect-box:hover {
+.connect-box:hover,
+.connect-box:focus {
   background-color: var(--accent-color);
 }
 
@@ -579,6 +554,7 @@ img {
   line-height: 1.87;
 }
 
-.card-set .item:hover {
+.card-set .item:hover,
+.card-set .item:focus {
   box-shadow: var(--card-shadow);
 }
